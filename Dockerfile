@@ -1,4 +1,4 @@
-FROM centos/s2i-core-centos7
+FROM centos:6.6
 
 ENV HTTPD_VERSION=2.4
 
