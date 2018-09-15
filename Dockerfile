@@ -1,6 +1,9 @@
-FROM centos:latest
-RUN yum -y install httpd
+FROM centos:6.6
+RUN yum install -y httpd
 COPY index.htm /var/www/html/
 EXPOSE 80
-ENTRYPOINT ["/usr/sbin/httpd"]
-CMD ["-D", "FOREGROUND"]
+ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+
+
+
+
